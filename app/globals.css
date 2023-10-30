@@ -1,27 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html{
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.transform_50{
+  transform: translate(-50%, -50%);
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.btn_custom{
+  @apply bg-[#272727] text-white px-[6rem] py-[1rem] text-2xl mx-2 rounded-3xl font-medium whitespace-nowrap mt-2 bg-opacity-80
+}
+.btn_inventory{
+  @apply bg-[#FAF9F6] text-black px-[4rem] py-[1rem] text-2xl mx-2 rounded-3xl font-medium whitespace-nowrap mt-2 bg-opacity-80
+}
+.btn_parent{
+  @apply absolute bottom-[10%] left-[50%] transform_50 flex flex-wrap md:flex-nowrap
+}
+.smnavbar_sections{
+  @apply flex flex-col bg-[#272727] bg-opacity-10 rounded-lg 
+}
+.smnavbar_elem{
+  @apply rounded-lg  hover:bg-slate-200 px-3 py-1 transition-all duration-300 text-center text-2xl p-8 active:bg-slate-400
+}
+.page_text{
+  @apply font-semibold md:text-7xl text-[#313131] mb-4 text-[3rem] sm:text-[4rem]
+}
+.order_text{
+  @apply flex text-2xl text-[#3B3B3B] flex-nowrap flex-col
+}
+.page_login_text{
+  @apply text-2xl font-medium text-gray-600
 }

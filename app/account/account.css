@@ -1,0 +1,24 @@
+.heading_p{
+    @apply flex gap-2 align-middle hover:bg-gray-100 p-5 rounded-md
+}
+.transition{
+    @apply transition-all ease-in-out duration-500
+}
+.body_parent{
+    @apply flex justify-center align-middle w-screen  mt-2
+}
+.body_child{
+    @apply flex flex-col sm:w-2/5 lg:w-1/5 w-3/5
+}
+.body_h2{
+   @apply text-[3.5rem] mb-5 font-semibold text-gray-800
+}
+.input{
+   @apply py-4 px-2 text-xl bg-gray-100 rounded-md mt-3 mb-6 font-semibold text-gray-600 outline-none border-2 border-gray-200 border-opacity-0 focus:border-opacity-100
+}
+.btn_sign_in{
+    @apply py-4 mt-6 text-2xl font-medium rounded-md transition-all ease-in-out duration-500 mb-5 w-full
+}
+.input_email{
+    @apply py-5 px-2 text-xl rounded-md mb-6 font-semibold text-gray-600 outline-none bg-white w-full
+}
